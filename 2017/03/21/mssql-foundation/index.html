@@ -14,10 +14,10 @@
     <meta name="description" content="数据表的基本结构基础组成一个新表被创建之时，系统将在磁盘中分配一段以8K为单位的连续空间，当字段的值从内存写入磁盘时，就在这一既定空间随机保存，当一个8K用完的时候，数据库指针会自动分配一个8K的空间。这里，每个8K空间被称为一个 数据页Page，又名页面或数据页面，并分配 从0-7的页号，每个文件的 第0页记录引导信息，叫 文件头(File header)；每8个数据页( 64K)的组合形成 扩">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MSSQL的基础知识">
-<meta property="og:url" content="http://yoursite.com/2017/03/10/mssql-foundation/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/03/21/mssql-foundation/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="数据表的基本结构基础组成一个新表被创建之时，系统将在磁盘中分配一段以8K为单位的连续空间，当字段的值从内存写入磁盘时，就在这一既定空间随机保存，当一个8K用完的时候，数据库指针会自动分配一个8K的空间。这里，每个8K空间被称为一个 数据页Page，又名页面或数据页面，并分配 从0-7的页号，每个文件的 第0页记录引导信息，叫 文件头(File header)；每8个数据页( 64K)的组合形成 扩">
-<meta property="og:updated_time" content="2017-03-21T15:37:07.757Z">
+<meta property="og:updated_time" content="2017-03-21T15:38:47.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MSSQL的基础知识">
 <meta name="twitter:description" content="数据表的基本结构基础组成一个新表被创建之时，系统将在磁盘中分配一段以8K为单位的连续空间，当字段的值从内存写入磁盘时，就在这一既定空间随机保存，当一个8K用完的时候，数据库指针会自动分配一个8K的空间。这里，每个8K空间被称为一个 数据页Page，又名页面或数据页面，并分配 从0-7的页号，每个文件的 第0页记录引导信息，叫 文件头(File header)；每8个数据页( 64K)的组合形成 扩">
@@ -80,14 +80,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/03/10/mssql-foundation/" title="MSSQL的基础知识" itemprop="url">MSSQL的基础知识</a>
+      <a href="/2017/03/21/mssql-foundation/" title="MSSQL的基础知识" itemprop="url">MSSQL的基础知识</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Bruce Lan" target="_blank" itemprop="author">Bruce Lan</a>
 		
   <p class="article-time">
-    <time datetime="2017-03-10T06:13:46.000Z" itemprop="datePublished"> Published 2017-03-10</time>
+    <time datetime="2017-03-21T15:13:46.000Z" itemprop="datePublished"> Published 2017-03-21</time>
     
   </p>
 </header>
@@ -145,7 +145,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2017/03/10/mssql-foundation/" data-title="MSSQL的基础知识 | Hexo" data-tsina="undefined" class="share clearfix">
+	  <div data-url="http://yoursite.com/2017/03/21/mssql-foundation/" data-title="MSSQL的基础知识 | Hexo" data-tsina="undefined" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -158,20 +158,20 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/03/10/how-to-use-jacman/" title="如何使用jacman">
-  <strong>上一篇：</strong><br/>
-  <span>
-  如何使用jacman</span>
+
+<div class="next">
+<a href="/2017/03/16/关于BufferOutStream写入数据丢失问题/"  title="BufferedOutputStream用法注意">
+ <strong>下一篇：</strong><br/> 
+ <span>BufferedOutputStream用法注意
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2017/03/10/mssql-foundation/" data-title="MSSQL的基础知识" data-url="http://yoursite.com/2017/03/10/mssql-foundation/"></div>
+	<div class="ds-thread" data-thread-key="2017/03/21/mssql-foundation/" data-title="MSSQL的基础知识" data-url="http://yoursite.com/2017/03/21/mssql-foundation/"></div>
 </section>
 
 
@@ -220,11 +220,11 @@
 			
 		
 			
-				<li><a href="/tags/MSSQL/" title="MSSQL">MSSQL<sup>1</sup></a></li>
+				<li><a href="/tags/Java-IO/" title="Java IO">Java IO<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Java-IO/" title="Java IO">Java IO<sup>1</sup></a></li>
+				<li><a href="/tags/MSSQL/" title="MSSQL">MSSQL<sup>1</sup></a></li>
 			
 		
 		</ul>

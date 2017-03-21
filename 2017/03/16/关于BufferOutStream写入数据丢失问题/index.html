@@ -11,28 +11,16 @@
     
 
     
-    <meta name="description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：
-byte[] retByt;
-………………
-File file = new File(&amp;quot;test.txt&amp;quot;);
-FileOutputStream fileOutput = new FileOutputStream(fi">
+    <meta name="description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BufferedOutputStream用法注意">
 <meta property="og:url" content="http://yoursite.com/2017/03/16/关于BufferOutStream写入数据丢失问题/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：
-byte[] retByt;
-………………
-File file = new File(&amp;quot;test.txt&amp;quot;);
-FileOutputStream fileOutput = new FileOutputStream(fi">
-<meta property="og:updated_time" content="2017-03-18T10:27:54.418Z">
+<meta property="og:description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：">
+<meta property="og:updated_time" content="2017-03-18T10:30:38.050Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BufferedOutputStream用法注意">
-<meta name="twitter:description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：
-byte[] retByt;
-………………
-File file = new File(&amp;quot;test.txt&amp;quot;);
-FileOutputStream fileOutput = new FileOutputStream(fi">
+<meta name="twitter:description" content="问题使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -112,15 +100,14 @@ FileOutputStream fileOutput = new FileOutputStream(fi">
 		
 		</div>
 		
-		<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：</p>
+		<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>使用封装了FileOutputStream的BufferedOutputStream进行write操作，当字节数组长度小于一定值时，写入文件失败。代码如下：<br><a id="more"></a></p>
 <pre><code>byte[] retByt;
 ………………
 File file = new File(&quot;test.txt&quot;);
 FileOutputStream fileOutput = new FileOutputStream(file);
 BufferedOutputStream bufferedOutput = new BufferedOutputStream(fileOutput);
 bufferedOutput.write(retByt);
-</code></pre><a id="more"></a>
-<h3 id="溯源"><a href="#溯源" class="headerlink" title="溯源"></a>溯源</h3><pre><code>Class FilterOutputStream extends OutputStream{
+</code></pre><h3 id="溯源"><a href="#溯源" class="headerlink" title="溯源"></a>溯源</h3><pre><code>Class FilterOutputStream extends OutputStream{
 
     protected OutputStream out;
 
@@ -185,7 +172,7 @@ bufferedOutput.write(retByt);
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/Java基础/">Java基础</a>
+  <a class="article-category-link" href="/categories/Java基础-IO/">Java基础-IO</a>
 </div>
 
 
@@ -258,13 +245,15 @@ bufferedOutput.write(retByt);
 		<ul>
 		
 		  
-		
-		  
-			<li><a href="/categories/Java基础/" title="Java基础">Java基础<sup>1</sup></a></li>
+			<li><a href="/categories/Java基础-IO/" title="Java基础-IO">Java基础-IO<sup>1</sup></a></li>
 		  
 		
 		  
 			<li><a href="/categories/how-to-use/" title="how to use">how to use<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据库知识/" title="数据库知识">数据库知识<sup>1</sup></a></li>
 		  
 		
 		</ul>
@@ -281,9 +270,11 @@ bufferedOutput.write(retByt);
 			
 		
 			
-				<li><a href="/tags/Java-IO/" title="Java IO">Java IO<sup>1</sup></a></li>
+				<li><a href="/tags/MSSQL/" title="MSSQL">MSSQL<sup>1</sup></a></li>
 			
 		
+			
+				<li><a href="/tags/Java-IO/" title="Java IO">Java IO<sup>1</sup></a></li>
 			
 		
 		</ul>
